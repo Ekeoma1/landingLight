@@ -65,6 +65,7 @@ section {
   border-radius: 5px;
   color: #fff;
   font-weight: 700;
+  position: relative;
 }
 
 .atm-card-text {
@@ -76,21 +77,6 @@ section {
   height: 50px;
   border-radius: 40%;
   background: #ffc09d;
-}
-
-.paywave {
-  transform: translateZ(30px);
-  /* float: right; */
-  /* position: absolute; */
-  /* margin: 15px 5px; */
-  top: 0;
-  right: 0;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
-  height: 50px;
-  width: 50px;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='56' viewBox='0 0 46 56'%3E%3Ctitle%3EContactlessIndicator 000%3C/title%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='6' stroke-linecap='round' d='m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5 0 0,1 0,28.5M3,19a18,17 0 0,1 0,18'/%3E%3C/svg%3E");
 }
 
 input::-webkit-outer-spin-button,
@@ -153,6 +139,12 @@ input[type="number"] {
 
 .paypal-img {
   width: 100px;
+}
+
+.MuiSvgIcon-root.ggg {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
 }
 
 .mastercard-icon {

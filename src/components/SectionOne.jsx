@@ -5,6 +5,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Visa from "../assets/images/visa.png";
 import Paypal from "../assets/images/paypal.png";
 import Discover from "../assets/images/discover.png";
+import WifiIcon from "@mui/icons-material/Wifi";
 
 const SectionOne = () => {
   const onChange = (event) => {
@@ -14,9 +15,9 @@ const SectionOne = () => {
     // raw value
     console.log(event.target.rawValue);
   };
+
   return (
     <section>
-      {/* <div className="container"> */}
       <div className="row gap-lg-0 gap-5">
         <div className="col-lg">
           <h3>Payment Information</h3>
@@ -32,7 +33,7 @@ const SectionOne = () => {
             </div>
 
             <div className="d-flex align-items-center gap-1">
-              {/* <div className="paywave"></div> */}
+              <WifiIcon fontSize="small" className="ggg" />
               <div className="atm-card-chip"></div>
             </div>
 
@@ -92,7 +93,6 @@ const SectionOne = () => {
           </form>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };
