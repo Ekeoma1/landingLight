@@ -1,38 +1,231 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-menu {
+  padding: 20px 0 50px 0;
+}
+
+.nav-menu a,
+.mobile-nav a {
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-menu a:hover,
+.mobile-nav a:hover {
+  color: #000;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: top center;
+  background-size: cover;
+}
+
+.mobile-nav {
+  padding: 20px;
+  position: absolute;
+  top: 12%;
+  right: 20%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 11px 1px rgb(0 0 0 / 7%);
+  z-index: 100;
+}
+
+.section-divider {
+  width: 100%;
+  height: 4px;
+  background-color: #f1f1f2;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.atm-card {
+  max-width: 400px;
+  padding: 20px;
+  background: linear-gradient(to right, #df5643, #6363c4);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.atm-card-text {
+  font-size: 12px;
+}
+
+.atm-card-chip {
+  width: 60px;
+  height: 50px;
+  border-radius: 40%;
+  background: #ffc09d;
+}
+
+.paywave {
+  transform: translateZ(30px);
+  /* float: right; */
+  /* position: absolute; */
+  /* margin: 15px 5px; */
+  top: 0;
+  right: 0;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='56' viewBox='0 0 46 56'%3E%3Ctitle%3EContactlessIndicator 000%3C/title%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='6' stroke-linecap='round' d='m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5 0 0,1 0,28.5M3,19a18,17 0 0,1 0,18'/%3E%3C/svg%3E");
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px 30px;
+}
+
+.form-container label {
+  color: #363636;
+  font-weight: 500;
+}
+
+.card-sub-header {
+  color: #bcc0c9;
+}
+
+.card-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #eff0f2;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d8d9dd;
+  margin-top: 10px;
+  color: #000;
+}
+
+.card-input::placeholder {
+  color: #222;
+  font-weight: 400;
+}
+
+.form-btn {
+  width: 100%;
+  height: 60px;
   text-align: center;
+  background-color: #3f67e9;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand-img {
+  width: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.paypal-img {
+  width: 100px;
+}
+
+.mastercard-icon {
+  display: inline-block;
+  height: 1em;
+  isolation: isolate;
+  position: relative;
+  right: 5%;
+  bottom: 15px;
+  line-height: 1em;
+  vertical-align: middle;
+  width: 0.8em;
+}
+
+.mastercard-icon::before,
+.mastercard-icon::after {
+  border-radius: 1em;
+  content: "";
+  display: inline-block;
+  height: 2em;
+  position: absolute;
+  width: 2em;
+}
+
+.mastercard-icon::before {
+  background-color: #eb001b;
+  left: 0;
+  top: 0;
+}
+
+.mastercard-icon::after {
+  background-color: #f79e1b;
+  mix-blend-mode: hard-light;
+  right: 0;
+  top: 0;
+}
+
+.price-wrapper {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.promo-code {
+  font-size: 14px;
+  color: #bbbfc8;
+}
+
+.payment-btn {
+  padding: 0 40px;
+  height: 60px;
+  text-align: center;
+  background-color: #3f67e9;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 430px) {
+  .form-container {
+    grid-template-columns: auto;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .price-wrapper {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .promo-code {
+    font-size: 12px;
   }
 }
